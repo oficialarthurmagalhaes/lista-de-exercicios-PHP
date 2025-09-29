@@ -17,7 +17,14 @@
     <main>
 
     <!-- implementação da solução -->
-     
+     <form action="dias_de_vida.php" method="POST">
+        <label for="nome">Insira seu nome: </label>
+        <input type="text" name="nome" id="nome">
+        <br>
+        <label for="idade">Insira sua idade: </label>
+        <input type="number" name="idade" id="idade">
+        <input type="submit" value="Calcular dias de vida">
+     </form>
     </main>
 </body>
 

@@ -11,17 +11,20 @@
 <body>
 
     <header>
-        <h2>Questão 10: Calculando as Horas</h2>
+        <h2>Questão 05: Maior de Três Números</h2>
     </header>
 
     <main>
 
     <!-- implementação da solução -->
-     <form action="horas_e_minutos.php" method="POST">
-        <label for="segundos">Insira o tempo de duração em segundos: </label>
-        <input type="number" name="segundos" id="segundos">
-        <input type="submit" value="Calcular">
-     </form>
+     <?php
+     $numero1 = $_POST["numero1"];
+     $numero2 = $_POST["numero2"];
+     $numero3 = $_POST["numero3"];
+
+     $maior_numero = max($numero1,$numero2,$numero3);
+     echo "O maior número entre os três é: $maior_numero";
+     ?>
     </main>
 </body>
 

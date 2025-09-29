@@ -17,11 +17,17 @@
     <main>
 
     <!-- implementação da solução -->
-     <form action="horas_e_minutos.php" method="POST">
-        <label for="segundos">Insira o tempo de duração em segundos: </label>
-        <input type="number" name="segundos" id="segundos">
-        <input type="submit" value="Calcular">
-     </form>
+     <?php
+     $segundos = $_POST["segundos"];
+
+     $minutos = $segundos / 60;
+     $horas = $minutos / 60;
+
+     echo "A duração do evento é equivalente a: <br>";
+     echo "Em horas: $horas horas<br>";
+     echo "Em minutos: $minutos minutos<br>";
+     echo "Em segundos: $segundos segundos";
+     ?>
     </main>
 </body>
 

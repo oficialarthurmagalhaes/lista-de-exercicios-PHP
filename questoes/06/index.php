@@ -17,7 +17,17 @@
     <main>
 
     <!-- implementação da solução -->
-     
+        <form action="ordem_decrescente.php" method="POST">
+            <label for="numero1">Insira o número 1: </label>
+            <input type="number" name="numero1" id="numero1">
+            <br>
+            <label for="numero2">Insira o número 2: </label>
+            <input type="number" name="numero2" id="numero2">
+            <br>
+            <label for="numero3">Insira o número 3: </label>
+            <input type="number" name="numero3" id="numero3">
+            <input type="submit" value="Ordem Decrescente">
+        </form>
     </main>
 </body>
 

@@ -11,17 +11,15 @@
 <body>
 
     <header>
-        <h2>Questão 10: Calculando as Horas</h2>
+        <h2>Questão 08: Números Ímpares</h2>
     </header>
 
     <main>
 
     <!-- implementação da solução -->
-     <form action="horas_e_minutos.php" method="POST">
-        <label for="segundos">Insira o tempo de duração em segundos: </label>
-        <input type="number" name="segundos" id="segundos">
-        <input type="submit" value="Calcular">
-     </form>
+     <?php
+     
+     ?>
     </main>
 </body>
 

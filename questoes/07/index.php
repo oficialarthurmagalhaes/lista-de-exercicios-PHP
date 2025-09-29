@@ -17,7 +17,11 @@
     <main>
 
     <!-- implementação da solução -->
-     
+     <form action="fatorial.php" method="POST">
+        <label for="numero">Insira um número: </label>
+        <input type="number" name="numero" id="numero">
+        <input type="submit" value="Calcular Fatorial">
+     </form>
     </main>
 </body>
 

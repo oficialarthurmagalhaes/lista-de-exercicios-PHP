@@ -11,17 +11,22 @@
 <body>
 
     <header>
-        <h2>Questão 10: Calculando as Horas</h2>
+        <h2>Questão 06: Ordem Decrescente</h2>
     </header>
 
     <main>
 
     <!-- implementação da solução -->
-     <form action="horas_e_minutos.php" method="POST">
-        <label for="segundos">Insira o tempo de duração em segundos: </label>
-        <input type="number" name="segundos" id="segundos">
-        <input type="submit" value="Calcular">
-     </form>
+     <?php
+     $numero1 = $_POST["numero1"];
+     $numero2 = $_POST["numero2"];
+     $numero3 = $_POST["numero3"];
+
+     $numeros = [$numero1,$numero2,$numero3];
+     rsort($numeros);
+     echo "Ordem decrescente: ";
+     echo implode(", ", $numeros);
+     ?>
     </main>
 </body>
 

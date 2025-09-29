@@ -17,7 +17,14 @@
     <main>
 
     <!-- implementação da solução -->
-     
+     <?php
+        echo "Numeros Ímpares de 1 a 50: <br>"; 
+        for($i = 1;  $i  <= 50; $i++){
+            if($i % 2 != 0){
+                echo $i . ", ";
+            }
+        };
+     ?>
     </main>
 </body>
 

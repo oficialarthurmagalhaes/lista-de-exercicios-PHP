@@ -11,17 +11,20 @@
 <body>
 
     <header>
-        <h2>Questão 10: Calculando as Horas</h2>
+        <h2>Questão 09: Dias de Vida</h2>
     </header>
 
     <main>
 
     <!-- implementação da solução -->
-     <form action="horas_e_minutos.php" method="POST">
-        <label for="segundos">Insira o tempo de duração em segundos: </label>
-        <input type="number" name="segundos" id="segundos">
-        <input type="submit" value="Calcular">
-     </form>
+     <?php
+     $nome = $_POST["nome"];
+     $idade = $_POST["idade"];
+
+     $dias_de_vida = $idade * 365;
+
+     echo "$nome, você já possui, pelo menos, $dias_de_vida dias de vida!";
+     ?>
     </main>
 </body>
 
