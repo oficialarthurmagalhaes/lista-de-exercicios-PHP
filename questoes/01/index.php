@@ -17,7 +17,13 @@
     <main>
 
     <!-- implementação da solução -->
-     
+
+    <form action="antecessor.php" method="POST">
+        <label for="numero">Insira um número: </label>
+        <input type="number" id="numero" name="numero" required>
+        <input type="submit" value="Antecessor">
+    </form>
+
     </main>
 </body>
 

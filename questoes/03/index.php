@@ -17,7 +17,14 @@
     <main>
 
     <!-- implementação da solução -->
-     
+     <form action="salario_do_mes.php" method="POST">
+        <label for="valor-hora">Insira quanto você recebe por hora: </label>
+        <input type="number" name="valor-hora" id="valor-hora">
+        <br>
+        <label for="horas-mes">Insira quantas horas você trabalha no mês: </label>
+        <input type="number" name="horas-mes" id="horas-mes">
+        <input type="submit" value="Calcular">  
+     </form>
     </main>
 </body>
 

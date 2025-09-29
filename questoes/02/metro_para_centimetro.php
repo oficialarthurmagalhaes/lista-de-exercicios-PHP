@@ -17,11 +17,12 @@
     <main>
 
     <!-- implementação da solução -->
-     <form action="metro_para_centimetro.php" method="POST">
-        <label for="metro">Valor em Metros: </label>
-        <input type="number" id="metro" name="metro">
-        <input type="submit" value="Converter p/ M">
-     </form>
+     <?php
+        $metro = $_POST["metro"];
+        $conversao = $metro * 100;
+
+        echo "O valor de $metro metros em centímetros é: $conversao cm";
+     ?>
     </main>
 </body>
 
